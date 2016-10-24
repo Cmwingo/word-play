@@ -9,70 +9,17 @@
   </head>
   <body>
     <div class="container">
-      <div id="blanks">
-        <form>
-          <h3>Fill in the blanks to write your Mad Lib letter to yourself!</h3>
-          <div class="form-group">
-            <label for="userName">Your name:</label>
-            <input id="userName" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="bestFriend">Name of your best friend:</label>
-            <input id="bestFriend" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="animal">An animal</label>
-            <input id="animal" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="exclamation">An exclamation</label>
-            <input id="exclamation" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="verb">A past tense verb</label>
-            <input id="verb" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="noun">A noun</label>
-            <input id="noun" class="form-control" type="text">
-          </div>
-          <h3>Fill in the address you'd like your letter to be sent to.</h3>
-          <div class="form-group">
-            <label for="streetAddress">Address First Line</label>
-            <input id="streetAddress" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="city">City</label>
-            <input id="city" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="state">State Initials</label>
-            <input id="state" class="form-control" type="text">
-          </div>
-          <div class="form-group">
-            <label for="zipCode">Zip Code</label>
-            <input id="zipCode" class="form-control" type="text">
-          </div>
-          <button type="submit" class="btn">Show me the letter!</button>
-        </form>
-      </div>
-      <div id="letter">
-        <div class="row">
-          <div class="address">
-            <p><span class="userName"></span></p><br>
-            <p><span class="streetAddress"></span></p><br>
-            <p><span class="city"></span>, <span class="state"></span>. <span class="zipCode"></p><br>
-          </div>
+      <form>
+        <h3>Enter a sentence</h3>
+        <div class="form-group">
+          <label for="sentenceInput">Your sentence:</label>
+          <input id="sentenceInput" class="form-control" type="text">
         </div>
+        <button type="submit" class="btn">Show me the money!</button>
+      </form>
+      <div id="output">
         <div class="row">
-          <h3>Dear <span class="userName"></span>,</h3>
-          <blockquote>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <span class="bestFriend"></span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <span class="animal"></span> exercitation ullamco laboris nisi ut <span class="exclamation"></span> aliquip ex ea <span class="verb"></span> commodo consequat. Duis aute irure dolor in reprehenderit in <span class="noun"></span> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </blockquote>
-          <h4>Always yours,</h4>
-          <h3><span class="userName" id="signature"></span></h3>
+          <h3><span class="sentenceOutput"></span></h3>
         </div>
       </div>
     </div>
