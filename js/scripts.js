@@ -6,14 +6,14 @@ $(document).ready(function(){
     console.log(words);
 
     var longWords = [];
-    words.forEach(function(word) {
-      if (word.length > 2) {
-        console.log(word);
-        longWords.push(word);
-      }
+    words.filter(isLong());
     });
     longWords.reverse();
     console.log(longWords);
     alert(longWords.join(" "));
   });
 });
+
+function isLong(word) {
+  return word.length > 2;
+  }
